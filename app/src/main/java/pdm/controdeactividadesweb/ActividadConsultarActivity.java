@@ -63,7 +63,7 @@ public class  ActividadConsultarActivity extends Activity {
         String url = "";
 
         if (v.getId() == R.id.boton)
-            url = conn.getURLLocal() + "/ws_consultar_actividad_fecha.php" + "?year=" + fecha[0]  + "&month=" + fecha[1] +  "&day=" + fecha[2];
+            url = conn.getURLLocal() + "/ControlActividades/ws_consultar_actividad_fecha.php" + "?year=" + fecha[0]  + "&month=" + fecha[1] +  "&day=" + fecha[2];
 
         String actividadExterna = "";
         actividadExterna = ControlServicios.obtenerRespuestaPeticion(url, this);

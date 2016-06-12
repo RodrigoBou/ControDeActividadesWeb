@@ -71,7 +71,7 @@ public class DocenteConsultarActivity extends Activity {
         String url = "";
 
         if (v.getId() == R.id.boton)
-            url = conn.getURLLocal() + "/ws_consultar_docente.php" + "?cod_docente=" + codigo;
+            url = conn.getURLLocal() + "/ControlActividades/ws_consultar_docente.php" + "?cod_docente=" + codigo;
 
         String docenteExterno = "";
         docenteExterno = ControlServicios.obtenerRespuestaPeticion(url, this);
