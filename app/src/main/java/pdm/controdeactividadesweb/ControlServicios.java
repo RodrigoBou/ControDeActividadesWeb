@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
@@ -23,15 +24,16 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
+import pdm.controdeactividadesweb.ClasesModelo.Docente;
 import pdm.controdeactividadesweb.ClasesModelo.GrupoMateria;
 import pdm.controdeactividadesweb.ClasesModelo.Recurso;
 
 public class ControlServicios {
-
 
 
     public static String obtenerRespuestaPeticion(String url, Context ctx) {
@@ -93,8 +95,6 @@ public class ControlServicios {
     }
 
 
-
-
     //SERVICIO PARA INSERTAR RESERVAS
 
     public static String insertarReservaPHP(String peticion, Context ctx) {
@@ -104,13 +104,14 @@ public class ControlServicios {
         try {
             JSONObject resultado = new JSONObject(json);
             int respuesta = resultado.getInt("resultado");
-            if (respuesta == 1){
-                cadena = "Registro ingresado";}
-            else {
-                }
+            if (respuesta == 1) {
+                cadena = "Registro ingresado";
+            } else {
+            }
         } catch (JSONException e) {
             e.printStackTrace();
-            cadena = "Error registro duplicado";}
+            cadena = "Error registro duplicado";
+        }
 
 
         return cadena;
@@ -124,18 +125,18 @@ public class ControlServicios {
         try {
             JSONObject resultado = new JSONObject(json);
             int respuesta = resultado.getInt("resultado");
-            if (respuesta == 1){
-                cadena = "Registro ingresado";}
-            else {
+            if (respuesta == 1) {
+                cadena = "Registro ingresado";
+            } else {
             }
         } catch (JSONException e) {
             e.printStackTrace();
-            cadena = "Error registro duplicado";}
+            cadena = "Error registro duplicado";
+        }
 
 
         return cadena;
     }
-
 
 
     public static String insertarActividadPHP(String peticion, Context ctx) {
@@ -145,13 +146,14 @@ public class ControlServicios {
         try {
             JSONObject resultado = new JSONObject(json);
             int respuesta = resultado.getInt("resultado");
-            if (respuesta == 1){
-                cadena = "Registro ingresado";}
-            else {
+            if (respuesta == 1) {
+                cadena = "Registro ingresado";
+            } else {
             }
         } catch (JSONException e) {
             e.printStackTrace();
-            cadena = "Error registro duplicado";}
+            cadena = "Error registro duplicado";
+        }
 
 
         return cadena;
@@ -163,11 +165,12 @@ public class ControlServicios {
             if (objs.length() != 0)
                 return objs.getJSONObject(0).getString("ID_RECURSO");
             else {
-                Toast.makeText(ctx, "Error no existe", Toast.LENGTH_LONG) .show();
+                Toast.makeText(ctx, "Error no existe", Toast.LENGTH_LONG).show();
                 return " ";
             }
         } catch (JSONException e) {
-            Toast.makeText(ctx, "Error con la respuesta JSON", Toast.LENGTH_LONG).show(); return " ";
+            Toast.makeText(ctx, "Error con la respuesta JSON", Toast.LENGTH_LONG).show();
+            return " ";
         }
     }
 
@@ -175,7 +178,7 @@ public class ControlServicios {
 
         String json = obtenerRespuestaPeticion(url, ctx);
         Recurso recurso;
-        recurso=new Recurso();
+        recurso = new Recurso();
 
         try {
             JSONArray objs = new JSONArray(json);
@@ -185,11 +188,9 @@ public class ControlServicios {
                 recurso.setNom_recurso(objs.getJSONObject(0).getString("NOM_RECURSO"));
                 recurso.setDetalle_recurso(objs.getJSONObject(0).getString("DETALLE_RECURSO"));
                 recurso.setEstado(objs.getJSONObject(0).getInt("ESTADO"));
-            }
+            } else {
 
-            else {
-
-                Toast.makeText(ctx, "Error no existe",Toast.LENGTH_LONG).show();
+                Toast.makeText(ctx, "Error no existe", Toast.LENGTH_LONG).show();
 
             }
         } catch (JSONException e) {
@@ -200,15 +201,13 @@ public class ControlServicios {
     }
 
 
-
-
     //SERVICIO PARA INSERTAR CONSULTAR GRUPOS POR SU ID
 
     public static GrupoMateria obtenerGrupoMateria(String url, Context ctx) {
 
         String json = obtenerRespuestaPeticion(url, ctx);
         GrupoMateria grupo;
-        grupo=new GrupoMateria();
+        grupo = new GrupoMateria();
 
         try {
             JSONArray objs = new JSONArray(json);
@@ -223,11 +222,9 @@ public class ControlServicios {
                 grupo.setNumGrupo(objs.getJSONObject(0).getString("NUM_GRUPO"));
                 grupo.setTipoGrupo(objs.getJSONObject(0).getString("ID_TIPO_GRUPO"));
 
-            }
+            } else {
 
-            else {
-
-                Toast.makeText(ctx, "Error carnet no existe",Toast.LENGTH_LONG).show();
+                Toast.makeText(ctx, "Error carnet no existe", Toast.LENGTH_LONG).show();
 
             }
         } catch (JSONException e) {
@@ -235,6 +232,22 @@ public class ControlServicios {
         }
 
         return grupo;
+    }
+
+    public static Docente obtenerDocente(String json, Context ctx) {
+
+        try {
+            JSONArray docenteJSON = new JSONArray(json);
+            JSONObject obj = docenteJSON.getJSONObject(0);
+            Docente docente = new Docente();
+            docente.setCod_docente("COD_DOCENTE");
+            docente.setNom_docente("NOM_DOCENTE");
+            return docente;
+        } catch (Exception e) {
+            Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG)
+                    .show();
+            return null;
+        }
     }
 
 
