@@ -51,6 +51,7 @@ public class GrupoMateriaConsultarActivity extends Activity {
         editDias = (EditText) findViewById(R.id.editDiasImpartida);
         editNum = (EditText) findViewById(R.id.editNumGrupo);
         editHorario = (EditText) findViewById(R.id.editHorario);
+        editTipoGrupo=(EditText) findViewById(R.id.editTipoGrupo);
 
 
 
@@ -68,19 +69,42 @@ public class GrupoMateriaConsultarActivity extends Activity {
         url=conn.getURLLocal()+"/ControlActividades/ws_consultar_grupo.php"+ "?ID_GRUPO=" + grupo;
 
 
-
         GrupoMateria gm= new GrupoMateria();
 
         gm=ControlServicios.obtenerGrupoMateria(url, this);
 
+
+
+
+        if (gm.getDocente()==null){
+
+            Toast.makeText(this, "No se encontro el grupo", Toast.LENGTH_LONG).show();
+
+
+        }
+
+
+
+        else{
+
         editCiclo.setText(gm.getCiclo().toString());
+        editTipoGrupo.setText(String.valueOf(gm.getTipoGrupo().toString()));
+        editNum.setText(gm.getNumGrupo().toString());
+        editHorario.setText(String.valueOf(gm.getHorario()));
+        editLocal.setText(gm.getLocal().toString());
+        editDocente.setText(gm.getDocente().toString());
+        editMateria.setText(gm.getMateria().toString());
+        editDias.setText(gm.getDiasImpartida().toString());
+
+
+        }
 
 
 
     }
 
 
-    public void limpiarTextoReserva(View v) {
+    public void limpiarTextoGrupoMateria(View v) {
 
         editCodigo.setText("");
         editDias.setText("");

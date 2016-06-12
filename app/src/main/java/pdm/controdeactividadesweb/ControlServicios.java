@@ -163,17 +163,25 @@ public class ControlServicios {
 
         try {
             JSONArray objs = new JSONArray(json);
-            if (objs.length() != 0)
+            if (objs.length() != 0) {
+                grupo.setIdGrupo(objs.getJSONObject(0).getInt("ID_GRUPO"));
                 grupo.setCiclo(objs.getJSONObject(0).getString("ID_CICLO"));
+                grupo.setDocente(objs.getJSONObject(0).getString("COD_DOCENTE"));
+                grupo.setHorario(objs.getJSONObject(0).getInt("ID_HORARIO"));
+                grupo.setLocal(objs.getJSONObject(0).getString("LOCAL"));
+                grupo.setMateria(objs.getJSONObject(0).getString("COD_MATERIA"));
+                grupo.setDiasImpartida(objs.getJSONObject(0).getString("DIASIMPARTIDA"));
+                grupo.setNumGrupo(objs.getJSONObject(0).getString("NUM_GRUPO"));
+                grupo.setTipoGrupo(objs.getJSONObject(0).getString("ID_TIPO_GRUPO"));
 
+            }
 
             else {
+
                 Toast.makeText(ctx, "Error carnet no existe",Toast.LENGTH_LONG).show();
 
             }
         } catch (JSONException e) {
-            Toast.makeText(ctx, "Error con la respuesta JSON",
-                    Toast.LENGTH_LONG).show();
 
         }
 
