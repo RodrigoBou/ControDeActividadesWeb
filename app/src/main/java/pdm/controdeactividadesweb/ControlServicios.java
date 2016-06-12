@@ -114,6 +114,8 @@ public class ControlServicios {
 
         return cadena;
     }
+
+
     public static String insertarReservaActividadPHP(String peticion, Context ctx) {
         String json = obtenerRespuestaPeticion(peticion, ctx);
         String cadena;
@@ -132,6 +134,9 @@ public class ControlServicios {
 
         return cadena;
     }
+
+
+
     public static String insertarActividadPHP(String peticion, Context ctx) {
         String json = obtenerRespuestaPeticion(peticion, ctx);
         String cadena;
