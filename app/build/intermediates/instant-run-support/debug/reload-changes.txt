@@ -1,8 +1,0 @@
-CHANGED,/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/pdm/controdeactividadesweb/R$id$override.class
-CHANGED,/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/pdm/controdeactividadesweb/ControlActividades$override.class
-CHANGED,/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/pdm/controdeactividadesweb/ReservaActividadAgregarActivity$override.class
-CHANGED,/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/pdm/controdeactividadesweb/R$layout$override.class
-CHANGED,/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/pdm/controdeactividadesweb/ReservaConsultarActivity$override.class
-CHANGED,/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/android/support/v7/appcompat/R$id$override.class
-CHANGED,/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/pdm/controdeactividadesweb/ReservaAgregarActivity$override.class

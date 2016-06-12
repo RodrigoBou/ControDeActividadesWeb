@@ -80,12 +80,12 @@
         "source": "/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/res/merged/debug/layout/activity_actividad_insertar.xml",
-        "source": "/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/src/main/res/layout/activity_actividad_insertar.xml"
-    },
-    {
         "merged": "/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/res/merged/debug/layout/activity_recurso_eliminar.xml",
         "source": "/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/src/main/res/layout/activity_recurso_eliminar.xml"
+    },
+    {
+        "merged": "/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/res/merged/debug/layout/activity_actividad_insertar.xml",
+        "source": "/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/src/main/res/layout/activity_actividad_insertar.xml"
     },
     {
         "merged": "/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",

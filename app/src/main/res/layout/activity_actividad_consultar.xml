@@ -33,7 +33,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="servicioPHP"
-        android:text="Buscar" />
+        android:text="Buscar"
+        style="@android:style/Widget.Button.Inset"/>
 
     <TableLayout
         android:layout_width="match_parent"

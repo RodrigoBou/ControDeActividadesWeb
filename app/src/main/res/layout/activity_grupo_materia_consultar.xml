@@ -38,13 +38,15 @@
             android:layout_height="wrap_content"
             android:text="Consultar"
             android:layout_column="0"
-            android:onClick="consultarGrupoMateria"/>
+            android:onClick="consultarGrupoMateria"
+            style="@android:style/Widget.Button.Inset"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Limpiar"
             android:onClick="limpiarTextoGrupoMateria"
+            style="@android:style/Widget.Button.Inset"
            />
 
     </LinearLayout>
