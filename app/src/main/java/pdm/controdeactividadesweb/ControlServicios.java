@@ -28,6 +28,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import pdm.controdeactividadesweb.ClasesModelo.GrupoMateria;
+import pdm.controdeactividadesweb.ClasesModelo.Recurso;
 
 public class ControlServicios {
 
@@ -155,6 +156,47 @@ public class ControlServicios {
 
         return cadena;
     }
+
+    public static String consultaReservaPHP(String json, Context ctx) {
+        try {
+            JSONArray objs = new JSONArray(json);
+            if (objs.length() != 0)
+                return objs.getJSONObject(0).getString("ID_RECURSO");
+            else {
+                Toast.makeText(ctx, "Error no existe", Toast.LENGTH_LONG) .show();
+                return " ";
+            }
+        } catch (JSONException e) {
+            Toast.makeText(ctx, "Error con la respuesta JSON", Toast.LENGTH_LONG).show(); return " ";
+        }
+    }
+
+    public static Recurso consultaRecursoPHP(String url, Context ctx) {
+
+        String json = obtenerRespuestaPeticion(url, ctx);
+        Recurso recurso;
+        recurso=new Recurso();
+
+        try {
+            JSONArray objs = new JSONArray(json);
+            if (objs.length() != 0) {
+                recurso.setNom_recurso(objs.getJSONObject(0).getString("NOM_RECURSO"));
+                recurso.setDetalle_recurso(objs.getJSONObject(0).getString("DETALLE_RECURSO"));
+                recurso.setEstado(objs.getJSONObject(0).getInt("ESTADO"));
+            }
+
+            else {
+
+                Toast.makeText(ctx, "Error no existe",Toast.LENGTH_LONG).show();
+
+            }
+        } catch (JSONException e) {
+
+        }
+
+        return recurso;
+    }
+
 
 
 
