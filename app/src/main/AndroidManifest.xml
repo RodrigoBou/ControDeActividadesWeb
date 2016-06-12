@@ -15,6 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ControlActividadesMain" />
+        <activity android:name=".DocenteConsultarActivity" />
+        <activity android:name=".ReservaEliminarActivity" />
+        <activity android:name=".ReservaConsultarActivity" />
+        <activity android:name=".ReservaAgregarActivity" />
+        <activity android:name=".RecursoConsultarActivity" />
+        <activity android:name=".GrupoMateriaConsultarActivity" />
+        <activity android:name=".ReservaActividadAgregarActivity" />
+        <activity android:name=".ReservaActividadConsultarActivity" />
+        <activity android:name=".ActividadInsertarActivity"></activity>
     </application>
 
 </manifest>

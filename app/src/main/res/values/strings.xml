@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">ControDeActividadesWeb</string>
+    <string name="ID_RECURSO">ID_RECURSO</string>
+    <string name="ID_ACTIVIDAD">ID_ACTIVIDAD</string>
+    <string name="Texto1">Texto1</string>
+    <string name="Boton1">Boton1</string>
+    <string name="Boton2">Boton2</string>
+    <string name="Boton3">Boton3</string>
+    <string name="Texto2">Texto2</string>
+    <string name="Boton4">Boton4</string>
+    <string name="Boton5">Boton5</string>
+    <string name="Boton6">Boton6</string>
+    <string name="consultarDocente">consultarDocente</string>
+    <string name="eliminarReserva">eliminarReserva</string>
+    <string name="consultarReserva">consultarReserva</string>
+    <string name="agregarReserva">agregarReserva</string>
+    <string name="consultarRecurso">consultarRecurso</string>
+    <string name="consultarGrupoMateria">consultarGrupoMateria</string>
+    <string name="agregarReservaActividad">agregarReservaActividad</string>
+    <string name="consultarReservaActividad">consultarReservaActividad</string>
+    <string name="agregarActividad">agregarActividad</string>
 </resources>
