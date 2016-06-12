@@ -22,19 +22,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="date">
+        android:inputType="text"
+        android:maxLength="7">
 
         <requestFocus />
     </EditText>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="330dp"
-        android:layout_height="28dp"
-        android:text="@string/Texto2"
-        android:textAlignment="center"
-        android:textSize="12dp"
-        android:textStyle="bold" />
 
     <Button
         android:id="@+id/boton"
@@ -42,11 +35,36 @@
         android:layout_height="wrap_content"
         android:onClick="servicioPHP"
         android:text="Buscar" />
-    <TextView
-        android:id="@+id/texto1"
+
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Resultado"/>
+        android:paddingTop="20dp">
+        <TableRow>
+            <TextView
+                android:id="@+id/texto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Codigo Docente: "
+                android:paddingTop="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="left"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/texto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre Docente: "
+                android:paddingTop="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="left"/>
+        </TableRow>
+    </TableLayout>
+
+
 
 </LinearLayout>
 

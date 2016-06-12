@@ -1,32 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="22"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="21"
     density="xhdpi"
     format="7"
-    timestamp="50354580366034" >
+    timestamp="3361127223186" >
 
     <task
         name="javac"
-        duration="13350" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1900" />
+        duration="0" />
     <task
         name="verifier"
-        duration="39" />
+        duration="0" />
 
     <artifact
-        location="/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
 
-    <build timestamp="50354580366034" >
+    <build timestamp="2532700725861" >
         <artifact
             location="/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="3067225659134" >
+        <artifact
+            location="/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="3361127223186" >
+        <artifact
+            location="/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

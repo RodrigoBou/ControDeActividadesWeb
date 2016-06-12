@@ -194,16 +194,28 @@
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="Agregar">Agrgar</string>
     <string name="Boton1">Boton1</string>
     <string name="Boton2">Boton2</string>
     <string name="Boton3">Boton3</string>
     <string name="Boton4">Boton4</string>
     <string name="Boton5">Boton5</string>
     <string name="Boton6">Boton6</string>
+    <string name="CONTRASEÑA">CONTRASEÑA</string>
+    <string name="ConsularReverva">Consultar</string>
+    <string name="DETALLERECURSO">DETALLE RECURSO</string>
+    <string name="ESTADO">ESTADO</string>
     <string name="ID_ACTIVIDAD">ID_ACTIVIDAD</string>
+    <string name="ID_CAT_RECURSO">CATEGORIA RECURSO</string>
+    <string name="ID_GRUPO">GRUPO</string>
     <string name="ID_RECURSO">ID_RECURSO</string>
+    <string name="ID_RESERVA">RESERVA</string>
+    <string name="Local">Local</string>
+    <string name="NOMRECURSO">NOMBRE RECURSO</string>
+    <string name="PHP">PHP</string>
     <string name="Texto1">Texto1</string>
     <string name="Texto2">Texto2</string>
+    <string name="USUARIO">USUARIO</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -234,6 +246,7 @@
     <string name="consultarReservaActividad">consultarReservaActividad</string>
     <string name="eliminarReserva">eliminarReserva</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="valor">Cambiar</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

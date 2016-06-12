@@ -240,12 +240,11 @@ public class ControlServicios {
             JSONArray docenteJSON = new JSONArray(json);
             JSONObject obj = docenteJSON.getJSONObject(0);
             Docente docente = new Docente();
-            docente.setCod_docente("COD_DOCENTE");
-            docente.setNom_docente("NOM_DOCENTE");
+            docente.setCod_docente(obj.getString("COD_DOCENTE"));
+            docente.setNom_docente(obj.getString("NOM_DOCENTE"));
             return docente;
         } catch (Exception e) {
-            Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG)
-                    .show();
+            Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG).show();
             return null;
         }
     }
