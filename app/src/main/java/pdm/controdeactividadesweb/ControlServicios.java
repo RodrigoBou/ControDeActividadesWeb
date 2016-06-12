@@ -26,6 +26,9 @@ import org.json.JSONObject;
 import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
+
+import pdm.controdeactividadesweb.ClasesModelo.GrupoMateria;
+
 public class ControlServicios {
 
 
@@ -89,6 +92,10 @@ public class ControlServicios {
     }
 
 
+
+
+    //SERVICIO PARA INSERTAR RESERVAS
+
     public static String insertarReservaPHP(String peticion, Context ctx) {
         String json = obtenerRespuestaPeticion(peticion, ctx);
         String cadena;
@@ -106,6 +113,35 @@ public class ControlServicios {
 
 
         return cadena;
+    }
+
+
+
+    //SERVICIO PARA INSERTAR CONSULTAR GRUPOS POR SU ID
+
+    public static GrupoMateria obtenerGrupoMateria(String url, Context ctx) {
+
+        String json = obtenerRespuestaPeticion(url, ctx);
+        GrupoMateria grupo;
+        grupo=new GrupoMateria();
+
+        try {
+            JSONArray objs = new JSONArray(json);
+            if (objs.length() != 0)
+                grupo.setCiclo(objs.getJSONObject(0).getString("ID_CICLO"));
+
+
+            else {
+                Toast.makeText(ctx, "Error carnet no existe",Toast.LENGTH_LONG).show();
+
+            }
+        } catch (JSONException e) {
+            Toast.makeText(ctx, "Error con la respuesta JSON",
+                    Toast.LENGTH_LONG).show();
+
+        }
+
+        return grupo;
     }
 
 
