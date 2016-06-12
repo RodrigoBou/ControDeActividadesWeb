@@ -7,9 +7,9 @@ package pdm.controdeactividadesweb;
 
 public class Conexion {
     //Cambie estos Parametos segun su PC
-    public String URLLocal = "http://169.254.80.80";
-    public String URLServerLocal = "http://10.10.60.3";
-    public String URLServerPublico = "http://138.255.154.43";
+    public String URLLocal = "http://192.168.1.8/ControlActividades";
+    public String URLServerLocal = "http://192.168.1.8/";
+    public String URLServerPublico = "http://190.62.44.208/";
     public Conexion() {}
 
     public String getURLServerLocal() {

@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
@@ -23,11 +24,14 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
-public class ControlServicios {
 
+import pdm.controdeactividadesweb.ClasesModelo.Docente;
+
+public class ControlServicios {
 
 
     public static String obtenerRespuestaPeticion(String url, Context ctx) {
@@ -96,16 +100,34 @@ public class ControlServicios {
         try {
             JSONObject resultado = new JSONObject(json);
             int respuesta = resultado.getInt("resultado");
-            if (respuesta == 1){
-                cadena = "Registro ingresado";}
-            else {
-                }
+            if (respuesta == 1) {
+                cadena = "Registro ingresado";
+            } else {
+            }
         } catch (JSONException e) {
             e.printStackTrace();
-            cadena = "Error registro duplicado";}
+            cadena = "Error registro duplicado";
+        }
 
 
         return cadena;
+    }
+
+    public static Docente obtenerDocente(String json, Context ctx) {
+
+        try {
+            JSONArray docenteJSON = new JSONArray(json);
+
+            JSONObject obj = docenteJSON.getJSONObject(0);
+            Docente docente = new Docente();
+            docente.setCod_docente("COD_DOCENTE");
+            docente.setNom_docente("NOM_DOCENTE");
+
+            return docente;
+        } catch (Exception e) {
+            Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG).show();
+            return null;
+        }
     }
 
 
