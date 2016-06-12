@@ -74,7 +74,7 @@
         android:layout_height="47dp"
         android:textAlignment="center"
         android:textIsSelectable="false"
-        android:textSize="12dp"
+        android:textSize="16dp"
         android:textStyle="bold" />
 
     <TextView
@@ -84,7 +84,7 @@
         android:layout_height="47dp"
         android:textAlignment="center"
         android:textIsSelectable="false"
-        android:textSize="12dp"
+        android:textSize="16dp"
         android:textStyle="bold" />
 
     <TextView
@@ -94,6 +94,6 @@
         android:layout_height="47dp"
         android:textAlignment="center"
         android:textIsSelectable="false"
-        android:textSize="12dp"
+        android:textSize="16dp"
         android:textStyle="bold" />
 </LinearLayout>

@@ -74,8 +74,8 @@ public class RecursoConsultarActivity extends Activity {
         else{
 
             textViewNombre.setText(gm.getNom_recurso().toString());
-            textViewDetalle.setText(String.valueOf(gm.getDetalle_recurso().toString()));
-            textViewEstado.setText(gm.getEstado());
+            textViewDetalle.setText(gm.getDetalle_recurso().toString());
+            textViewEstado.setText(String.valueOf(gm.getEstado()));
         }
 
     }

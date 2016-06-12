@@ -180,6 +180,8 @@ public class ControlServicios {
         try {
             JSONArray objs = new JSONArray(json);
             if (objs.length() != 0) {
+                recurso.setId_recurso(objs.getJSONObject(0).getInt("ID_RECURSO"));
+                recurso.setId_cat_recurso(objs.getJSONObject(0).getInt("ID_CAT_RECURSO"));
                 recurso.setNom_recurso(objs.getJSONObject(0).getString("NOM_RECURSO"));
                 recurso.setDetalle_recurso(objs.getJSONObject(0).getString("DETALLE_RECURSO"));
                 recurso.setEstado(objs.getJSONObject(0).getInt("ESTADO"));
