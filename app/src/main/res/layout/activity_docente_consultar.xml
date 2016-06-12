@@ -10,6 +10,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".DocenteConsultarActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Consultar Docente"
+        android:textColor="@color/colorAccent"
+        android:textSize="35dp" />
 
     <TextView
         android:id="@+id/textView1"
