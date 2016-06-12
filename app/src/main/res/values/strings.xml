@@ -7,8 +7,10 @@
     <string name="ID_CAT_RECURSO">CATEGORIA RECURSO</string>
     <string name="NOMRECURSO">NOMBRE RECURSO</string>
     <string name="DETALLERECURSO">DETALLE RECURSO</string>
-    <string name="USUARIO">USUARIO</string>
-    <string name="CONTRASEÑA">CONTRASEÑA</string>
+    <string name="USUARIO">Usuario</string>
+    <string name="CONTRASEÑA">Contraseña</string>
+    <string name="INGRESAR">Ingresar</string>
+    <string name="cerrar">Cerrar</string>
     <string name="ESTADO">ESTADO</string>
     <string name="valor">Cambiar</string>
     <string name="Texto1">Texto1</string>

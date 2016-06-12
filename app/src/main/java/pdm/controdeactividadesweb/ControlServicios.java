@@ -141,6 +141,26 @@ public class ControlServicios {
     }
 
 
+
+    public static boolean validarUsuario(String json, Context ctx) {
+        boolean validacion = false;
+
+        try {
+            JSONObject objs = new JSONObject(json);
+            int respuesta = objs.getInt("resultado");
+            if (respuesta == 1)
+                validacion = true;
+            else {
+
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+
+        }
+        return validacion;
+    }
+
+
     public static String insertarActividadPHP(String peticion, Context ctx) {
         String json = obtenerRespuestaPeticion(peticion, ctx);
         String cadena;

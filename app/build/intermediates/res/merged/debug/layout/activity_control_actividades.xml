@@ -74,5 +74,12 @@
         android:onClick="lanzarActividad"
         android:text="@string/agregarActividad"
         android:layout_weight="0.06" />
+    <Button
+        android:id="@+id/button_cerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="lanzarActividad"
+        android:text="@string/cerrar"
+        android:layout_weight="0.06" />
 </LinearLayout>
 

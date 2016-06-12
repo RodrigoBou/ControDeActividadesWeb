@@ -2,7 +2,9 @@ package pdm.controdeactividadesweb;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 public class ControlActividades extends Activity {
     @Override
@@ -40,6 +42,15 @@ public class ControlActividades extends Activity {
                 break;
             case R.id.button_agrgarActividad:
                 i = new Intent(this, ActividadInsertarActivity.class);
+                break;
+            case R.id.button_cerrarSesion:
+                SharedPreferences session = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                SharedPreferences.Editor editor = session.edit();
+                editor.remove("id");
+                editor.apply();
+
+                Intent intent = new Intent(this, LoginActivity.class);
+                startActivity(intent);
                 break;
         }
         if (i != null)
