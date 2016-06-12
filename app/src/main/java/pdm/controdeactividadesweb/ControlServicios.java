@@ -25,10 +25,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
+import pdm.controdeactividadesweb.ClasesModelo.Actividad;
 import pdm.controdeactividadesweb.ClasesModelo.Docente;
 import pdm.controdeactividadesweb.ClasesModelo.GrupoMateria;
 import pdm.controdeactividadesweb.ClasesModelo.Recurso;
@@ -243,6 +245,26 @@ public class ControlServicios {
             docente.setCod_docente(obj.getString("COD_DOCENTE"));
             docente.setNom_docente(obj.getString("NOM_DOCENTE"));
             return docente;
+        } catch (Exception e) {
+            Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG).show();
+            return null;
+        }
+    }
+
+    public static Actividad obtenerActividad(String json, Context ctx) {
+
+        try {
+            JSONArray actividadJSON = new JSONArray(json);
+            JSONObject obj = actividadJSON.getJSONObject(0);
+            Actividad actividad = new Actividad();
+            actividad.setId_actividad(obj.getString("ID_ACTIVIDAD"));
+            actividad.setCod_docente(obj.getString("COD_DOCENTE"));
+            actividad.setNom_actividad(obj.getString("NOM_ACTIVIDAD"));
+            actividad.setDetalle_actividad(obj.getString("DETALLE_ACTIVIDAD"));
+            actividad.setFecha(obj.getString("FECHA"));
+            actividad.setHora_ini(obj.getString("HORA_INI"));
+            actividad.setHora_fin(obj.getString("HORA_FIN"));
+            return actividad;
         } catch (Exception e) {
             Toast.makeText(ctx, "Error en parseo de JSON", Toast.LENGTH_LONG).show();
             return null;

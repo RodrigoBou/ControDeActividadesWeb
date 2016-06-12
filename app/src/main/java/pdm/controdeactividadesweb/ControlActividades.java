@@ -2,7 +2,6 @@ package pdm.controdeactividadesweb;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 public class ControlActividades extends Activity {
@@ -37,7 +36,7 @@ public class ControlActividades extends Activity {
                 i = new Intent(this, ReservaActividadAgregarActivity.class);
                 break;
             case R.id.button_consultarReservaActividad:
-                i = new Intent(this, ReservaActividadConsultarActivity.class);
+                i = new Intent(this, ActividadConsultarActivity.class);
                 break;
             case R.id.button_agrgarActividad:
                 i = new Intent(this, ActividadInsertarActivity.class);

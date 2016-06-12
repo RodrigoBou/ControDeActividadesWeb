@@ -31,7 +31,7 @@
         <activity android:name="pdm.controdeactividadesweb.RecursoConsultarActivity" />
         <activity android:name="pdm.controdeactividadesweb.GrupoMateriaConsultarActivity" />
         <activity android:name="pdm.controdeactividadesweb.ReservaActividadAgregarActivity" />
-        <activity android:name="pdm.controdeactividadesweb.ReservaActividadConsultarActivity" />
+        <activity android:name="pdm.controdeactividadesweb.ActividadConsultarActivity" />
         <activity android:name="pdm.controdeactividadesweb.ActividadInsertarActivity" />
     </application>
 

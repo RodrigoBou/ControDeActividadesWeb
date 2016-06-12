@@ -82,10 +82,10 @@ activity#pdm.controdeactividadesweb.ReservaActividadAgregarActivity
 ADDED from /home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/src/main/AndroidManifest.xml:27:9-69
 	android:name
 		ADDED from /home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/src/main/AndroidManifest.xml:27:19-66
-activity#pdm.controdeactividadesweb.ReservaActividadConsultarActivity
-ADDED from /home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/src/main/AndroidManifest.xml:28:9-71
+activity#pdm.controdeactividadesweb.ActividadConsultarActivity
+ADDED from /home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/src/main/AndroidManifest.xml:28:9-64
 	android:name
-		ADDED from /home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/src/main/AndroidManifest.xml:28:19-68
+		ADDED from /home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/src/main/AndroidManifest.xml:28:19-61
 activity#pdm.controdeactividadesweb.ActividadInsertarActivity
 ADDED from /home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/src/main/AndroidManifest.xml:29:9-72
 	android:name

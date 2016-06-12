@@ -27,7 +27,7 @@
     <string name="consultarRecurso">consultarRecurso</string>
     <string name="consultarGrupoMateria">consultarGrupoMateria</string>
     <string name="agregarReservaActividad">agregarReservaActividad</string>
-    <string name="consultarReservaActividad">consultarReservaActividad</string>
+    <string name="consultarReservaActividad">Consultar Actividad</string>
     <string name="agregarActividad">agregarActividad</string>
     <string name="Local">Local</string>
     <string name="PHP">PHP</string>
