@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2168d172d7956d1a71735e609b05e7a6a378ffd1">
+        <dex dex="/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d14026a0a15b9cdb0bbfbe04c46b6a079e31189c/classes.dex" />
+    </item>
+
+</items>

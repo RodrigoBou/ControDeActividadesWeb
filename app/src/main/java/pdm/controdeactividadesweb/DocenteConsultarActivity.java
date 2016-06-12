@@ -79,6 +79,7 @@ public class DocenteConsultarActivity extends Activity {
 
         String cod = "Codigo Docente: " + docente.getCod_docente();
         String nom = "Nombre Docente: " + docente.getNom_docente();
+
         texto1.setText(cod);
         texto2.setText(nom);
 

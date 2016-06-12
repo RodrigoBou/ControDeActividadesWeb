@@ -45,7 +45,7 @@ public class  ActividadConsultarActivity extends Activity {
 
         conn = new Conexion();
 
-        fechaTxt = (EditText) findViewById(R.id.editText_fecha);
+        fechaTxt = (EditText) findViewById(R.id.editTextFecha);
         texto1 = (TextView) findViewById(R.id.texto1);
         texto2 = (TextView) findViewById(R.id.texto2);
         texto3 = (TextView) findViewById(R.id.texto3);

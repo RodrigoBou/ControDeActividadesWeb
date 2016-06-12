@@ -17,11 +17,11 @@
         android:text="ingrese fecha de la actividad a buscar" />
 
     <EditText
-        android:id="@+id/editText_fecha"
+        android:id="@+id/editTextFecha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="yyyy/mm/dd"
+        android:hint="yyyy-mm-dd"
         android:inputType="date">
 
         <requestFocus />

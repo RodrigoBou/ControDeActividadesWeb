@@ -19,7 +19,7 @@
         </activity>
         <activity android:name=".ControlActividades" />
         <activity android:name=".DocenteConsultarActivity" />
-        <activity android:name=".ReservaEliminarActivity" />
+        <activity android:name=".RecursoEliminarActivity" />
         <activity android:name=".ReservaConsultarActivity" />
         <activity android:name=".ReservaAgregarActivity" />
         <activity android:name=".RecursoConsultarActivity" />

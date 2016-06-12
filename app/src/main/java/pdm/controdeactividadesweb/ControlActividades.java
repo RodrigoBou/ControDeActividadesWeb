@@ -19,7 +19,7 @@ public class ControlActividades extends Activity {
                 i = new Intent(this, DocenteConsultarActivity.class);
                 break;
             case R.id.button_eliminarReserva:
-                i = new Intent(this, ReservaEliminarActivity.class);
+                i = new Intent(this, RecursoEliminarActivity.class);
                 break;
 
             case R.id.button_consultarReserva:

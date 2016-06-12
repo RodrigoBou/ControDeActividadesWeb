@@ -61,11 +61,11 @@
         android:text="@string/agregarReservaActividad"
         android:layout_weight="0.06" />
     <Button
-        android:id="@+id/button_consultarReservaActividad"
+        android:id="@+id/button_consultarActividad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="lanzarActividad"
-        android:text="@string/consultarReservaActividad"
+        android:text="@string/consultarActividad"
         android:layout_weight="0.06" />
     <Button
         android:id="@+id/button_agrgarActividad"

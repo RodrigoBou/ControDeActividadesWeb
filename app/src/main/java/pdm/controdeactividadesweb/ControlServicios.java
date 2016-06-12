@@ -261,7 +261,9 @@ public class ControlServicios {
         try {
             JSONArray docenteJSON = new JSONArray(json);
             JSONObject obj = docenteJSON.getJSONObject(0);
+
             Docente docente = new Docente();
+
             docente.setCod_docente(obj.getString("COD_DOCENTE"));
             docente.setNom_docente(obj.getString("NOM_DOCENTE"));
             return docente;
@@ -276,7 +278,9 @@ public class ControlServicios {
         try {
             JSONArray actividadJSON = new JSONArray(json);
             JSONObject obj = actividadJSON.getJSONObject(0);
+
             Actividad actividad = new Actividad();
+
             actividad.setId_actividad(obj.getString("ID_ACTIVIDAD"));
             actividad.setCod_docente(obj.getString("COD_DOCENTE"));
             actividad.setNom_actividad(obj.getString("NOM_ACTIVIDAD"));

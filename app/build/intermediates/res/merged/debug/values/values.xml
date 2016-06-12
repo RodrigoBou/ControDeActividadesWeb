@@ -240,12 +240,12 @@
     <string name="agregarReserva">agregarReserva</string>
     <string name="agregarReservaActividad">agregarReservaActividad</string>
     <string name="app_name">ControDeActividadesWeb</string>
-    <string name="cerrar">Cerrar</string>
+    <string name="cerrar">Cerrar Sesion</string>
+    <string name="consultarActividad">Consultar Actividad</string>
     <string name="consultarDocente">consultarDocente</string>
     <string name="consultarGrupoMateria">consultarGrupoMateria</string>
     <string name="consultarRecurso">consultarRecurso</string>
     <string name="consultarReserva">consultarReserva</string>
-    <string name="consultarReservaActividad">Consultar Actividad</string>
     <string name="eliminarReserva">eliminarReserva</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="valor">Cambiar</string>
