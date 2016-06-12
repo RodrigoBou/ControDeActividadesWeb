@@ -26,7 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Eliminar"
-        android:onClick=""/>
+        android:onClick=""
+        style="@android:style/Widget.Button.Inset"/>
 
     <TextView
         android:id="@+id/text"

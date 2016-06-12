@@ -30,6 +30,7 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
+    <color name="colorAccent">#00BCD4</color>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
@@ -55,7 +56,6 @@
     <color name="myAccentColor">#CDDC39</color>
     <color name="myDrawerBackground">#FFF</color>
     <color name="myNavigationColor">#000000</color>
-    <color name="myPrimaryColor">#00BCD4</color>
     <color name="myPrimaryDarkColor">#0097A7</color>
     <color name="myTextPrimaryColor">#212121</color>
     <color name="myWindowBackground">#FFFFFF</color>
@@ -260,7 +260,7 @@
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimary">@color/colorAccent</item>
         <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
         <item name="colorAccent">@color/myAccentColor</item>
         <item name="android:textColorPrimary">@color/myTextPrimaryColor</item>

@@ -17,69 +17,79 @@
         android:layout_height="wrap_content"
         android:onClick="lanzarActividad"
         android:text="@string/consultarDocente"
-        android:layout_weight="0.10" />
+        android:layout_weight="0.10"
+        style="@android:style/Widget.Button.Inset"/>
     <Button
         android:id="@+id/button_eliminarReserva"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="lanzarActividad"
         android:text="@string/eliminarReserva"
-        android:layout_weight="0.06" />
+        android:layout_weight="0.06"
+        style="@android:style/Widget.Button.Inset"/>
     <Button
         android:id="@+id/button_consultarReserva"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="lanzarActividad"
         android:text="@string/consultarReserva"
-        android:layout_weight="0.06" />
+        android:layout_weight="0.06"
+        style="@android:style/Widget.Button.Inset"/>
     <Button
         android:id="@+id/button_agregarReserva"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="lanzarActividad"
         android:text="@string/agregarReserva"
-        android:layout_weight="0.06" />
+        android:layout_weight="0.06"
+        style="@android:style/Widget.Button.Inset"/>
     <Button
         android:id="@+id/button_consultarRecurso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="lanzarActividad"
         android:text="@string/consultarRecurso"
-        android:layout_weight="0.06" />
+        android:layout_weight="0.06"
+        style="@android:style/Widget.Button.Inset"/>
     <Button
         android:id="@+id/button_consultarGrupoMateria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="lanzarActividad"
         android:text="@string/consultarGrupoMateria"
-        android:layout_weight="0.06" />
+        android:layout_weight="0.06"
+        style="@android:style/Widget.Button.Inset"/>
     <Button
         android:id="@+id/button_agregarReservaActividad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="lanzarActividad"
         android:text="@string/agregarReservaActividad"
-        android:layout_weight="0.06" />
+        android:layout_weight="0.06"
+        style="@android:style/Widget.Button.Inset"/>
     <Button
         android:id="@+id/button_consultarActividad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="lanzarActividad"
         android:text="@string/consultarActividad"
-        android:layout_weight="0.06" />
+        android:layout_weight="0.06"
+        style="@android:style/Widget.Button.Inset"/>
     <Button
         android:id="@+id/button_agrgarActividad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="lanzarActividad"
         android:text="@string/agregarActividad"
-        android:layout_weight="0.06" />
+        android:layout_weight="0.06"
+        style="@android:style/Widget.Button.Inset"/>
     <Button
         android:id="@+id/button_cerrarSesion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="lanzarActividad"
         android:text="@string/cerrar"
-        android:layout_weight="0.06" />
+        android:layout_weight="0.06"
+        style="@android:style/Widget.Button.Inset"/>
 </LinearLayout>
 

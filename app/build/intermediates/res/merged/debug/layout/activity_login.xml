@@ -24,7 +24,8 @@
             android:id="@+id/editNomUsuario"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
-            android:hint="@string/USUARIO"/>
+            android:hint="@string/USUARIO"
+            style="@android:style/TextAppearance.Widget.EditText"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -34,14 +35,16 @@
             android:id="@+id/editTextPassword"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
-            android:hint="@string/CONTRASEÑA"/>
+            android:hint="@string/CONTRASEÑA"
+            style="@android:style/TextAppearance.Widget.EditText"/>
 
         <Button
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:text="@string/INGRESAR"
             android:layout_gravity="center_horizontal"
-            android:onClick="validarUsuario"/>
+            android:onClick="validarUsuario"
+            style="@android:style/Widget.Button.Inset"/>
     </LinearLayout>
 
 </RelativeLayout>
