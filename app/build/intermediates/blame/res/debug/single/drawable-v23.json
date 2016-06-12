@@ -4,11 +4,11 @@
         "source": "C:\\home\\yohalmo\\AndroidStudioProjects\\ControDeActividadesWeb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\kelly\\Desktop\\PDM WS\\web\\ControDeActividadesWeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
-        "source": "C:\\Users\\kelly\\Desktop\\PDM WS\\web\\ControDeActividadesWeb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
-    },
-    {
         "merged": "C:\\Users\\pc\\Desktop\\ControDeActividadesWeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
         "source": "C:\\Users\\pc\\Desktop\\ControDeActividadesWeb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelly\\Desktop\\PDM WS\\web\\ControDeActividadesWeb\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "C:\\Users\\kelly\\Desktop\\PDM WS\\web\\ControDeActividadesWeb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
     }
 ]

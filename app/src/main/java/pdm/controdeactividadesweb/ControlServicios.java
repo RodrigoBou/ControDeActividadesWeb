@@ -146,8 +146,8 @@ public class ControlServicios {
         boolean validacion = false;
 
         try {
-            JSONObject objs = new JSONObject(json);
-            int respuesta = objs.getInt("resultado");
+            JSONObject resultado = new JSONObject(json);
+            int respuesta = resultado.getInt("resultado");
             if (respuesta == 1)
                 validacion = true;
             else {
