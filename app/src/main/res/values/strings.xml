@@ -19,4 +19,7 @@
     <string name="agregarReservaActividad">agregarReservaActividad</string>
     <string name="consultarReservaActividad">consultarReservaActividad</string>
     <string name="agregarActividad">agregarActividad</string>
+    <string name="Local">Local</string>
+    <string name="PHP">PHP</string>
+    <string name="Agregar">Agrgar</string>
 </resources>

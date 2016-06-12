@@ -1,12 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pdm.controdeactividadesweb.ReservaActividadAgregarActivity">
+    android:orientation="vertical">
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Agregar Reserva De Actividad"
+        android:textColor="@color/colorAccent"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/editID_RECURSO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID De Recurso"
+        android:inputType="number"
+        android:paddingTop="20dp" />
+
+    <EditText
+        android:id="@+id/editID_ACTIVIDAD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID De Actividad"
+        android:inputType="number"
+        android:paddingTop="20dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Insertar"
+            android:onClick="insertarReservaActividad"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="limpiarTextoReserva"
+            android:text="Limpiar"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

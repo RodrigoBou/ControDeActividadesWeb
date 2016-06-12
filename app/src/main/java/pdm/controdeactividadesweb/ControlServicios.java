@@ -107,6 +107,42 @@ public class ControlServicios {
 
         return cadena;
     }
+    public static String insertarReservaActividadPHP(String peticion, Context ctx) {
+        String json = obtenerRespuestaPeticion(peticion, ctx);
+        String cadena;
+        cadena = "";
+        try {
+            JSONObject resultado = new JSONObject(json);
+            int respuesta = resultado.getInt("resultado");
+            if (respuesta == 1){
+                cadena = "Registro ingresado";}
+            else {
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+            cadena = "Error registro duplicado";}
+
+
+        return cadena;
+    }
+    public static String insertarActividadPHP(String peticion, Context ctx) {
+        String json = obtenerRespuestaPeticion(peticion, ctx);
+        String cadena;
+        cadena = "";
+        try {
+            JSONObject resultado = new JSONObject(json);
+            int respuesta = resultado.getInt("resultado");
+            if (respuesta == 1){
+                cadena = "Registro ingresado";}
+            else {
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+            cadena = "Error registro duplicado";}
+
+
+        return cadena;
+    }
 
 
 }
