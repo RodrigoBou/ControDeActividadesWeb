@@ -25,7 +25,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="yyyy-mm-dd"
-        android:inputType="date">
+        android:inputType="date"
+        style="@android:style/TextAppearance.Widget.EditText">
 
         <requestFocus />
     </EditText>

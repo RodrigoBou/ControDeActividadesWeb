@@ -31,7 +31,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:maxLength="7">
+        android:maxLength="7"
+        style="@android:style/TextAppearance.Widget.EditText">
 
         <requestFocus />
     </EditText>
