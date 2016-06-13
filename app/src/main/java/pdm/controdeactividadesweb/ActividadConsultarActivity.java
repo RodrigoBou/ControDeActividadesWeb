@@ -54,16 +54,14 @@ public class  ActividadConsultarActivity extends Activity {
         texto6 = (TextView) findViewById(R.id.texto6);
         texto7 = (TextView) findViewById(R.id.texto7);
 
-        //valor default
-        fechaTxt.setText("2016/01/01");
     }
 
     public void servicioPHP(View v) {
-        String[] fecha = fechaTxt.getText().toString().split("/");
+        String fecha = fechaTxt.getText().toString();
         String url = "";
 
         if (v.getId() == R.id.boton)
-            url = conn.getURLLocal() + "/ControlActividades/ws_consultar_actividad_fecha.php" + "?year=" + fecha[0]  + "&month=" + fecha[1] +  "&day=" + fecha[2];
+            url = conn.getURLLocal() + "/ControlActividades/ws_consultar_actividad_fecha.php" + "?fecha=" + fecha;
 
         String actividadExterna = "";
         actividadExterna = ControlServicios.obtenerRespuestaPeticion(url, this);

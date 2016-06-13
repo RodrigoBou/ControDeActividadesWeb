@@ -160,6 +160,26 @@ public class ControlServicios {
         return validacion;
     }
 
+    public static String eliminarRecurso(String json, Context ctx) {
+        String cadena;
+        cadena = "";
+
+        try {
+            JSONObject resultado = new JSONObject(json);
+            int respuesta = resultado.getInt("resultado");
+            if (respuesta == 1)
+                cadena = "Registro eliminado";
+            else {
+
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+            cadena = "Error registro no encontrado";
+
+        }
+        return cadena;
+    }
+
 
     public static String insertarActividadPHP(String peticion, Context ctx) {
         String json = obtenerRespuestaPeticion(peticion, ctx);

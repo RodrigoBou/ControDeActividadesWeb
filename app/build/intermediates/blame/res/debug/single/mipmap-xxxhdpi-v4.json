@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
-        "source": "/home/yohalmo/AndroidStudioProjects/ControDeActividadesWeb/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\home\\yohalmo\\AndroidStudioProjects\\ControDeActividadesWeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\home\\yohalmo\\AndroidStudioProjects\\ControDeActividadesWeb\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kelly\\Desktop\\PDM WS\\web\\ControDeActividadesWeb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\kelly\\Desktop\\PDM WS\\web\\ControDeActividadesWeb\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }
 ]

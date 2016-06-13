@@ -25,6 +25,7 @@
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             android:hint="@string/USUARIO"
+            android:textColor="@color/colorAccent"
             style="@android:style/TextAppearance.Widget.EditText"/>
 
         <EditText
@@ -36,6 +37,7 @@
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             android:hint="@string/CONTRASEÑA"
+            android:textColor="@color/colorAccent"
             style="@android:style/TextAppearance.Widget.EditText"/>
 
         <Button

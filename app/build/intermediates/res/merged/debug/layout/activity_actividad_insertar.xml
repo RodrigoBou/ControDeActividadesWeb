@@ -10,8 +10,14 @@
         android:gravity="center"
         android:paddingTop="10dp"
         android:text="Agregar Actividad"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/myTextPrimaryColor"
         android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="ID De Actividad"/>
 
     <EditText
         android:id="@+id/editID_ACTIVIDAD"
@@ -19,7 +25,14 @@
         android:layout_height="wrap_content"
         android:hint="ID De Actividad"
         android:inputType="number"
-        android:paddingTop="20dp" />
+        android:paddingTop="10dp"
+        android:background="#fefefe" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Codigo del docente"/>
 
     <EditText
         android:id="@+id/editCOD_DOCENTE"
@@ -27,42 +40,80 @@
         android:layout_height="wrap_content"
         android:hint="Codigo del docente"
         android:inputType="text"
-        android:paddingTop="20dp" />
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Nombre de la Actividad"/>
+
     <EditText
         android:id="@+id/editNOM_ACTIVIDAD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nombre de la Actividad"
         android:inputType="text"
-        android:paddingTop="20dp" />
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Detalle de la actividad"/>
+
+
     <EditText
         android:id="@+id/editDETALLE_ACTIVIDAD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Detalle de la actividad"
         android:inputType="text"
-        android:paddingTop="20dp" />
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="2016-01-01"/>
+
     <EditText
         android:id="@+id/editFECHA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="2016-01-01"
         android:inputType="text"
-        android:paddingTop="20dp" />
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="00:00:00"/>
+
     <EditText
         android:id="@+id/editHORA_INI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="00:00:00"
         android:inputType="text"
-        android:paddingTop="20dp" />
+        android:paddingTop="10dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="00:00:00"/>
+
+
     <EditText
         android:id="@+id/editHORA_FIN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="00:00:00"
         android:inputType="text"
-        android:paddingTop="20dp" />
+        android:paddingTop="10dp" />
 
 
 
@@ -70,7 +121,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="30dp">
+        android:paddingTop="5dp">
 
         <Button
             android:layout_width="wrap_content"

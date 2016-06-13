@@ -251,7 +251,7 @@
     <string name="consultarGrupoMateria">consultarGrupoMateria</string>
     <string name="consultarRecurso">consultarRecurso</string>
     <string name="consultarReserva">consultarReserva</string>
-    <string name="eliminarReserva">eliminarReserva</string>
+    <string name="eliminarReserva">eliminarRecurso</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="valor">Cambiar</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

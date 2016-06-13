@@ -10,8 +10,14 @@
         android:gravity="center"
         android:paddingTop="10dp"
         android:text="Insertar reserva"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/myTextPrimaryColor"
         android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="ID Reserva"/>
 
     <EditText
         android:id="@+id/editIdReserva"
@@ -21,6 +27,13 @@
         android:inputType="number"
         android:paddingTop="20dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="ID Recurso"/>
+
+
     <EditText
         android:id="@+id/editRecurso"
         android:layout_width="match_parent"
@@ -28,6 +41,13 @@
         android:hint="ID Recurso"
         android:inputType="time"
         android:paddingTop="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="ID Grupo"/>
 
     <EditText
         android:id="@+id/editGrupo"

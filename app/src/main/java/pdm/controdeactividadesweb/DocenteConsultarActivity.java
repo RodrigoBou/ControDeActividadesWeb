@@ -62,8 +62,7 @@ public class DocenteConsultarActivity extends Activity {
         codDocente = (EditText) findViewById(R.id.editText_fecha);
         texto1 = (TextView) findViewById(R.id.texto1);
         texto2 = (TextView) findViewById(R.id.texto2);
-        //valor default
-        codDocente.setText("YV00001");
+
     }
 
     public void servicioPHP(View v) {

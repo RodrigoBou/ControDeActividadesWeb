@@ -12,10 +12,13 @@
     tools:context=".ActividadConsultarActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ingrese fecha de la actividad a buscar" />
-
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Consular Actividad"
+        android:textColor="@color/myTextPrimaryColor"
+        android:textSize="35dp" />
     <EditText
         android:id="@+id/editTextFecha"
         android:layout_width="match_parent"

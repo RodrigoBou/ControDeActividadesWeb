@@ -10,19 +10,20 @@
         android:gravity="center"
         android:paddingTop="10dp"
         android:text="Consultar grupo"
-        android:textColor="@color/colorAccent"
-        android:textSize="35dp" />
+        android:textColor="@color/myTextPrimaryColor"
+        android:textSize="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
         android:text="ID Grupo"/>
 
 
     <EditText
         android:id="@+id/editIdGrupo"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:inputType="text"
         android:maxLength="10"/>
 
@@ -54,12 +55,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
         android:text="Tipo de grupo"/>
 
     <EditText
         android:id="@+id/editTipoGrupo"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:inputType="text"
         android:enabled="false"
         android:focusable="false"
@@ -70,12 +72,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
         android:text="Materia"/>
 
     <EditText
         android:id="@+id/editMateria"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:inputType="text"
         android:enabled="false"
         android:focusable="false"
@@ -86,12 +89,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
         android:text="Docente"/>
 
     <EditText
         android:id="@+id/editDocente"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:inputType="text"
         android:enabled="false"
         android:focusable="false"
@@ -102,12 +106,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
         android:text="Ciclo"/>
 
     <EditText
         android:id="@+id/editCiclo"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:inputType="text"
         android:enabled="false"
         android:focusable="false"
@@ -119,12 +124,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
         android:text="Local"/>
 
     <EditText
         android:id="@+id/editLocal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:inputType="text"
         android:enabled="false"
         android:focusable="false"
@@ -135,12 +141,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
         android:text="Dias"/>
 
     <EditText
         android:id="@+id/editDiasImpartida"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:inputType="text"
         android:enabled="false"
         android:focusable="false"
@@ -151,12 +158,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
         android:text="Horario"/>
 
     <EditText
         android:id="@+id/editHorario"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:inputType="text"
         android:enabled="false"
         android:focusable="false"
@@ -167,20 +175,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
         android:text="Numero de grupo"/>
 
     <EditText
         android:id="@+id/editNumGrupo"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:inputType="text"
         android:enabled="false"
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:cursorVisible="false"
         android:longClickable="false"/>
-
-
-
-
 </LinearLayout>

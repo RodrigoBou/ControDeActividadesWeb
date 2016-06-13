@@ -9,8 +9,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ingrese id recurso a eliminar"
-        android:paddingTop="10dp"/>
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Eliminar Recurso"
+        android:textColor="@color/myTextPrimaryColor"
+        android:textSize="35dp" />
 
     <EditText
         android:id="@+id/editRecurso"
@@ -26,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Eliminar"
-        android:onClick=""
+        android:onClick="servicioPHP"
         style="@android:style/Widget.Button.Inset"/>
 
     <TextView

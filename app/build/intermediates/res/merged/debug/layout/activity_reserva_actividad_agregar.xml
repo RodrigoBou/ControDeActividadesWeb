@@ -10,16 +10,29 @@
         android:gravity="center"
         android:paddingTop="10dp"
         android:text="Agregar Reserva De Actividad"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/myTextPrimaryColor"
         android:textSize="35dp" />
 
-    <EditText
-        android:id="@+id/editID_RECURSO"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/IdRecurso"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="ID De Recurso"
-        android:inputType="number"
-        android:paddingTop="20dp" />
+        android:textColor="@color/colorAccent"
+        android:text="@string/ID_RECURSO"/>
+
+        <EditText
+            android:id="@+id/editID_RECURSO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID De Recurso"
+            android:inputType="number"
+            android:paddingTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="ID De Actividad"/>
 
     <EditText
         android:id="@+id/editID_ACTIVIDAD"

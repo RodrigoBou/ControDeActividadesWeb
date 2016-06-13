@@ -23,7 +23,7 @@
     <string name="Boton5">Boton5</string>
     <string name="Boton6">Boton6</string>
     <string name="consultarDocente">consultarDocente</string>
-    <string name="eliminarReserva">eliminarReserva</string>
+    <string name="eliminarReserva">eliminarRecurso</string>
     <string name="consultarReserva">consultarReserva</string>
     <string name="agregarReserva">agregarReserva</string>
     <string name="consultarRecurso">consultarRecurso</string>

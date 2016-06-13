@@ -33,21 +33,17 @@ public class RecursoEliminarActivity extends AppCompatActivity {
 
         editRecurso = (EditText) findViewById(R.id.editRecurso);
         text = (TextView) findViewById(R.id.text);
-
-        //valor default
-        editRecurso.setText("01");
     }
 
     public void servicioPHP(View v){
-        String id = editRecurso.getText().toString();
+        Integer id = Integer.valueOf(editRecurso.getText().toString());
         String url = "";
 
-        if (v.getId() == R.id.boton)
             url = conn.getURLLocal() + "/ControlActividades/ws_eliminar_recurso.php" + "?id_recurso=" + id;
 
-        String recursoExterno = "";
-        recursoExterno = ControlServicios.obtenerRespuestaPeticion(url, this);
+        String eliminarRecursoJSON = ControlServicios.obtenerRespuestaPeticion(url, this);
 
-        text.setText("Registros Afectados: " + recursoExterno);
+        text.setText(ControlServicios.eliminarRecurso(eliminarRecursoJSON, this));
+
     }
 }
